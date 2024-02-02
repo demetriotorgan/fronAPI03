@@ -1,21 +1,15 @@
 import React from 'react'
-import './Card.css'
-import {BsTrash} from 'react-icons/bs'
 
-const API = 'https://teste2api-production.up.railway.app/person/'
-const handleDelete = async (id)=>{
-  await fetch(API+id,{
-    method:'DELETE',
-  })
-  
-}
-
-const Card = (props) => {
+const Card = ({registro, deleteRegistro, editRegistro}) => {
   return (
-    <div className='card'>
-        <h3>{props.nome}</h3>
-        <h5>{props.email}</h5>
-        <BsTrash onClick={()=>handleDelete(props.id)}/>
+    <div>
+        {registro.nome}
+        <br />
+        {registro.email}
+        <br />
+        <button onClick={()=>deleteRegistro(registro.id)}>Excluir</button>
+        <button onClick={()=>editRegistro(registro.id)} >Editar</button>
+        {console.log(registro.id)}
     </div>
   )
 }
