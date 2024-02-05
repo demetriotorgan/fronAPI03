@@ -1,0 +1,21 @@
+
+.formulario{
+    width: 100%;
+    background-color: #00000039;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.painel{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.enviar{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0 10px;
+    gap: 10px;
+}

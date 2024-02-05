@@ -1,0 +1,40 @@
+.card{
+    background-image: linear-gradient(to left, #00949a, #000131);
+    border: 1px solid #ffffff57;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.dados{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.botoes{
+    padding: 10px;
+    display: flex;
+    justify-content: right;
+}
+
+.botoes button{
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 0.8em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;  
+    color: #fff;  
+    font-size: 20px;
+    transition: 0.3s;    
+    margin: 5px;    
+}
+
+.botoes button:active{
+    font-size: 25px;
+}

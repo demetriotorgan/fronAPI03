@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import './EditForm.css'
 
 const EditForm = ({editRegistro,cadastro}) => {
     const [nome, setNome] = useState(cadastro.nome)
@@ -28,20 +29,27 @@ const EditForm = ({editRegistro,cadastro}) => {
     }
 
   return (
-    <div className='App'> 
-        <form onSubmit={handleSubmit}>
-            {console.log('Esse é o nome',cadastro.nome)}
+    <div> 
+        <form onSubmit={handleSubmit} className='formulario'>
+          <div className='painel'>
+            <label htmlFor='nome'>Nome</label>
             <input 
             value={nome || ''}
             type='text'            
             onChange={(e)=>setNome(e.target.value)}
             />
+          </div>
+          <div className='painel'>
+            <label htmlFor='email'>Email</label>
             <input 
             value={email || ''}
             type='email'            
             onChange={(e)=>setEmail(e.target.value)}
             />
+          </div>
+          <div className='enviar'>
             <button type='submit'>Editar</button>
+          </div>
         </form>
     </div>
   )
