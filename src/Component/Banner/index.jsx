@@ -7,7 +7,7 @@ const Banner = () => {
     <div className='banner'>
     <h1>C.R.U.D</h1>
     <h4>Desenvolvido por: Demétrio Torgan</h4>    
-    <img src='../../public/img/mern.png' />
+    <img src='/src/img/mern.png' />
     </div>
     </>
   )
